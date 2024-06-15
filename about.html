@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Gustav Boyd</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #00ff6c, #00c6ff, #0072ff, #ffffff);
+            background-size: 300% 300%;
+            animation: gradientBG 10s ease infinite;
+            color: #fff;
+            text-align: center;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            padding: 5% 10%;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            color: #fff;
+            background: #00c6ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #0072ff;
+        }
+
+        .section {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.5s ease-out;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <a href="index.html" class="button">Home</a>
+            <a href="resume.html" class="button">Resume</a>
+        </div>
+        
+        <h1>Hi there! I'm Gustav Boyd</h1>
+        
+        <div class="section" id="section1">
+            <div class="icon"><i class="fas fa-gamepad"></i></div>
+            <p>My love affair with technology started young, playing Pokémon on my Gameboy Color.</p>
+        </div>
+        
+        <div class="section" id="section2">
+            <div class="icon"><i class="fas fa-tools"></i></div>
+            <p>Fast forward to high school, where I was soldering resistors into circuit boards to build a telephone, and eventually, I built my own PC.</p>
+        </div>
+        
+        <div class="section" id="section3">
+            <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+            <p>This passion for all things tech led me to Sacramento State, where I earned my Bachelor's in Computer Science.</p>
+        </div>
+        
+        <div class="section" id="section4">
+            <div class="icon"><i class="fas fa-shield-alt"></i></div>
+            <p>Since then, I've been diving headfirst into the exciting world of cybersecurity, earning industry certifications and building innovative projects.</p>
+        </div>
+        
+        <div class="section" id="section5">
+            <div class="icon"><i class="fas fa-snowboarding"></i></div>
+            <p>But there's more to me than just tech! I love snowboarding, playing various sports, engaging in competitive video games, and spending quality time with my dogs. Staying fit is another passion of mine—it's all about balance, right?</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.section');
+            let delay = 0;
+            sections.forEach(section => {
+                setTimeout(() => {
+                    section.classList.add('visible');
+                }, delay);
+                delay += 1000; // delay in milliseconds
+            });
+        });
+    </script>
+</body>
+</html>

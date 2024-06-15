@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Gustav Boyd Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+            font-size: 0.90vw;
+        }
+        h1, h2, h3, h4, h5 {
+            color: #2c3e50;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+        }
+        h4 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        h5 {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        b {
+            color: #2c3e50;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contact-info span, .contact-info a {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            color: #555;
+        }
+        .contact-info i {
+            margin-right: 8px;
+            color: #2c3e50;
+        }
+        .contact-info a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2vw;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 2vw;
+        }
+        .job-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .job-title .title {
+            font-weight: bold;
+        }
+        .job-title .date {
+            font-style: italic;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #2c3e50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            background-color: #1a252f;
+            transform: scale(1.05);
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+                margin: 10px; 
+            }
+            .container {
+                max-width: 100%; 
+                padding: 10px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Buttons -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="index.html" class="btn">Home</a>
+        <a href="about.html" class="btn btn-secondary">About Me</a>
+    </div>
+    <div class="container">
+        <h1>Gustav Boyd</h1>
+        <div class="contact-info">
+            <span><i class="fas fa-envelope"></i>boydgustav@gmail.com</span>
+            <span><i class="fas fa-phone"></i>(707) 567-3725</span>
+            <span><i class="fas fa-map-marker-alt"></i>Roseville, CA</span>
+            <a href="https://www.linkedin.com/in/gustav-boyd" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            <a href="https://github.com/gustavboyd" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+        </div>
+
+        <div class="section">
+            <h3>Work Experience</h3>
+            <div class="job-title">
+                <span class="title">Dynatrace Consultant</span>
+                <span class="date">Feb 2022 - Present</span>
+            </div>
+            <ul>
+                <li>Spearheaded strategic Dynatrace consulting solutions, driving operational efficiency and performance enhancements across the organization.</li>
+                <li>Developed tailored monitoring strategies for cloud-native technologies, ensuring optimal performance and reliability of critical systems.</li>
+                <li>Led cross-functional collaboration with Operations, Business, Development, and IT Monitoring teams to design quarterly monitoring and observability strategies aligned with enterprise KPIs.</li>
+                <li>Produced business-critical reports enabling rapid identification of root causes and resolution of issues in high-pressure war room scenarios.</li>
+                <li>Recognized with consecutive nominations for the Dynatrace West Riders Recognition, acknowledging commitment to client service excellence.</li>
+                <li>Received the prestigious Dynatrace Value and Adoption Award for FY23 Q2, in recognition of significant contributions to team success and client satisfaction.</li>
+                <li>Proactive and dedicated professional with a proven track record of quick learning and proactive problem-solving, consistently exceeding expectations.</li>
+                <li>Leveraged expertise to mentor new hires, facilitating their professional development and ensuring seamless integration into the team.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Projects</h3>
+            <div class="job-title">
+                <span class="title">Azure Bicep VM Fleet Commander</span>
+                <span class="date">Apr 2024</span>
+            </div>
+            <ul>
+                <li>Developed and deployed Azure Virtual Machines using Bicep and ARM templates, streamlining infrastructure provisioning processes.</li>
+                <li>Utilized Bicep, a declarative language for Azure deployments, to define resource configurations and simplify template management.</li>
+                <li>Designed and implemented networking resources such as Virtual Networks, Subnets, and Network Security Groups to ensure secure and isolated environments for VM deployments.</li>
+                <li>Automated parameterized VM provisioning with Bicep modules, enabling flexibility in specifying VM size, count, and region for different deployment scenarios.</li>
+                <li>Maintained a version-controlled repository of Bicep templates and ARM parameter files, facilitating collaboration and ensuring traceability of infrastructure changes.</li>
+            </ul>
+            <div class="job-title">
+                <span class="title">Azure File Share Application</span>
+                <span class="date">Apr 2024</span>
+            </div>
+            <ul>
+                <li>Developed and deployed a web application for file uploads using Azure Web Apps and Blob Storage.</li>
+                <li>Implemented secure file storage and access with Azure KeyVault and Shared Access Signatures (SAS).</li>
+                <li>Integrated Azure Blob Storage SDKs to handle file uploads directly from the web application.</li>
+                <li>Generated unique download links for uploaded files using SAS tokens.</li>
+                <li>Configured Azure Blob Storage lifecycle management policies to automatically delete inactive files after 24 hours.</li>
+            </ul>
+            <div class="job-title">
+                <span class="title">Azure NetMaze Explorer</span>
+                <span class="date">Apr 2024</span>
+            </div>
+            <ul>
+                <li>Designed and implemented Azure Virtual Networks (VNets) with segregated subnets for effective resource isolation and management.</li>
+                <li>Deployed test resources such as VMs across multiple subnets within the Azure VNet, ensuring comprehensive network coverage and accessibility.</li>
+                <li>Implemented Network Security Groups (NSGs) to control inbound and outbound traffic, enforcing strict access policies and enhancing network security.</li>
+                <li>Demonstrated proficiency in Azure networking services, including VNet configuration, VPN Gateway setup, and NSG rule definition, ensuring adherence to best practices and security standards.</li>
+            </ul>
+            <div class="job-title">
+                <span class="title">Azure Automated Employee Onboarding System</span>
+                <span class="date">Mar 2024</span>
+            </div>
+            <ul>
+                <li>Implemented an automated employee onboarding system using Azure AD, Logic Apps, and Azure Resource Manager.</li>
+                <li>Created Logic Apps workflows for automatic user creation, role assignment, and resource provisioning based on trigger events.</li>
+                <li>Developed automated email notifications to welcome new hires and provide access instructions using the Azure Email Service.</li>
+                <li>Monitored onboarding processes through Logic Apps run history and Azure AD logs to ensure smooth operations.</li>
+            </ul>
+            <div class="job-title">
+                <span class="title">Blue Team Level 1</span>
+                <span class="date">Mar 2024</span>
+            </div>
+            <ul>
+                <li>Successfully completed a rigorous 24-hour incident response practical exam, demonstrating proficiency in Phishing Analysis, Threat Intelligence, Digital Forensics, SIEM, and Incident Response.</li>
+                <li>Proven expertise in threat detection and response techniques, utilizing advanced methodologies and tools to mitigate cybersecurity risks effectively.</li>
+                <li>Demonstrated proficiency in utilizing industry-leading security tools and technologies, such as Splunk, Wireshark, Autopsy, and DeepBlueCLI.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Education</h3>
+            <div class="job-title">
+                <span class="title">California State University Sacramento</span>
+                <span class="date">Aug 2017 - Dec 2021</span>
+            </div>
+            <h5>BS, Computer Science</h5>
+            <ul>
+                <li><b>Courses:</b> Data Structures & Algorithm Analysis, Database Management Systems, Computer Architecture, Computer Software Engineering, Object-Oriented Programming, Computer Networks & Internet, Operating System Principles, Data Warehousing and Data Mining, Software Test and Quality Assurance</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Certifications, Skills, Interests</h3>
+            <ul>
+                <li><b>Certifications:</b> Microsoft Azure Administrator Associate, AWS Cloud Practitioner, CompTIA Security+, CompTIA Network+, Linux Professional Institute Linux Essentials, Dynatrace Professional Certification, Blue Team Level 1 (BTL1)</li>
+                <li><b>Programming Languages:</b> JavaScript, Python</li>
+                <li><b>Tools:</b> VirusTotal, Autopsy, Splunk, FTK Imager, Volatility, DeepBlueCLI, Wireshark</li>
+                <li><b>Version Control:</b> Git, GitHub</li>
+                <li><b>Operating Systems:</b> Windows, Linux</li>
+                <li><b>Scripting:</b> Bash, PowerShell</li>
+                <li><b>Markup Languages:</b> HTML, CSS, JSON</li>
+                <li><b>Infrastructure as Code (IaC):</b> Azure Bicep</li>
+                <li><b>Interests:</b> Building computers, dog training, snowboarding, hiking</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+                    
