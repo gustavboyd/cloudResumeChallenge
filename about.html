@@ -39,20 +39,45 @@
 
         .button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 15px 30px;
             margin: 10px;
-            font-size: 1em;
+            font-size: 1.1em;
             color: #fff;
             background: #00c6ff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background 0.3s ease;
             text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite;
         }
 
         .button:hover {
             background: #0072ff;
+            transform: scale(1.05);
+        }
+
+        .button-secondary {
+            background: #00ff6c;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        .button-secondary:hover {
+            background: #00c64f;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
 
         .section {
@@ -80,7 +105,7 @@
     <div class="container">
         <div class="buttons">
             <a href="index.html" class="button">Home</a>
-            <a href="resume.html" class="button">Resume</a>
+            <a href="resume.html" class="button button-secondary">Resume</a>
         </div>
         
         <h1>Hi there! I'm Gustav Boyd</h1>
